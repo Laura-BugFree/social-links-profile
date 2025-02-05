@@ -1,0 +1,93 @@
+:root {
+    --clr-accent: hsl(75, 94%, 57%);
+    --clr-neutral-400: hsl(0, 0%, 100%);
+    --clr-neutral-500: hsl(0, 0%, 20%);
+    --clr-neutral-600: hsl(0, 0%, 12%);
+    --clr-neutral-700: hsl(0, 0%, 8%);
+
+    --ff-primary: "Inter", sans-serif;
+
+    --fs-400: .875rem;
+
+    --fw400: 400;
+    --fw500: 600;
+    --fw600: 700;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw400);
+    min-block-size: 100vh;      
+    background: var(--clr-neutral-700);
+    color: var(--clr-neutral-400);
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.user {
+    inline-size: 90%;
+    max-inline-size: 25rem;
+    border-radius: 1em;
+    font-size: var(--fs-400);
+    text-align: center;
+    background: var(--clr-neutral-600);
+    padding: 2em 3em;
+}
+
+.btn {
+    text-decoration: none;
+    font-weight: var(--fw600);
+    background: var(--bg, var(--clr-neutral-500));
+    color: var(--fg, var(--clr-neutral-400));
+    display: block;
+}
+
+.btn:hover,
+.btn:focus {
+    background: var(--bg, var(--clr-accent));
+    color: var(--fg, var(--clr-neutral-600));
+}
+
+.user .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user .name {
+    margin-block: 0;
+}
+
+.user .location {
+    color: var(--clr-accent);
+}
+
+.user img {
+    max-width: 7rem;
+    margin-block: 1em 2em;
+    border-radius: 100vw;
+    order: -1;
+}
+
+.socials li {
+    list-style: none;
+}
+
+.socials .btn {
+    padding-block: 1em;
+    margin: 1.5em 0;
+    border-radius: .75em;
+    cursor: pointer;
+}
+
