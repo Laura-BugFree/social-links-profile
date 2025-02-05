@@ -74,7 +74,7 @@ body {
 }
 
 .user img {
-    max-width: 7rem;
+    max-width: 6rem;
     margin-block: 1em 2em;
     border-radius: 100vw;
     order: -1;
@@ -82,6 +82,10 @@ body {
 
 .socials li {
     list-style: none;
+}
+
+.socials ul {
+    padding: 0;
 }
 
 .socials .btn {
